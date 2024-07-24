@@ -24,7 +24,7 @@ spec:
       - name: nginx-helloworld
         image: alanrenouf/docker-nginx-hello-keswick
         ports:
-        - containerPort: 81
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -35,7 +35,7 @@ spec:
   type: NodePort
   ports:
   - port: 81      # Port exposed within the cluster
-    targetPort: 81  # Port on the pods
+    targetPort: 80  # Port on the pods
     nodePort: 30099   # Port accessible externally on each node
   selector:
     app: nginx-hello-ecs
