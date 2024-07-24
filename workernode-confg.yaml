@@ -1,3 +1,4 @@
+# Edited today 
 # Example of how to change the default kubernetes worker node configuration to provide more memory or CPUs
 apiVersion: vmoperator.vmware.com/v1alpha1
 kind: VirtualMachineClass
