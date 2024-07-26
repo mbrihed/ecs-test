@@ -67,22 +67,6 @@ spec:
                         },
                         "num_ports": 1024,
                         "mtu": 1500,
-                        "port_groups": [
-                            {
-                                "name": "SS7PG",
-                                "vlan_id": 102,
-                                "policy": {
-                                    "nic_teaming": {
-                                        "policy": "LOADBALANCE_SRCID",
-                                        "notify_switches": true,
-                                        "rolling_order": false,
-                                        "link_criteria_beacon": "IGNORE",
-                                        "active_nics": ["vmnic0"],
-                                        "standby_nics": []
-                                    }
-                                }
-                            }
-                        ],
                         "policy": {
                             "nic_teaming": {
                                 "policy": "LOADBALANCE_SRCID",
