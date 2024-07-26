@@ -69,12 +69,6 @@ spec:
                         "mtu": 1500,
                         "port_groups": [
                             {
-                                "name": "VM Network 16",
-                                "vlan_id": 0
-                            }
-                        ]
-                        "port_groups": [
-                            {
                                 "name": "SS7PG",
                                 "vlan_id": 102,
                                 "policy": {
