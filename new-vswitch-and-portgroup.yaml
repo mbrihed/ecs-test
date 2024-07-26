@@ -58,22 +58,45 @@ spec:
                     },
                     {
                         "name": "vSwitch1",
+                        "bridge": {
+                            "link_discovery_protocol": {
+                                "protocol": "CDP",
+                                "operation": "LISTEN"
+                            },
+                            "nics": ["vmnic0"]
+                        },
+                        "port_groups": [
+                            {
+                                "name": "SS6PG",
+                                "vlan_id": 102,
+                                "policy": {
+                                    "nic_teaming": {
+                                        "policy": "LOADBALANCE_SRCID",
+                                        "notify_switches": true,
+                                        "rolling_order": false,
+                                        "link_criteria_beacon": "IGNORE",
+                                        "active_nics": ["vmnic0"],
+                                        "standby_nics": []
+                                    }
+                                }
+                            },
+                        ],
                         "policy": {
                             "nic_teaming": {
                                 "policy": "LOADBALANCE_SRCID",
                                 "notify_switches": true,
                                 "rolling_order": false,
                                 "link_criteria_beacon": "IGNORE",
-                                "active_nics": [
-                                    "vmnic0"
-                                ],
+                                "active_nics": ["vmnic0"],
                                 "standby_nics": []
                             },
                             "security": {
                                 "allow_promiscuous": false,
                                 "mac_changes": false,
                                 "forged_transmits": false
-                            },
+                            }
+                        }
+                    },
                             "traffic_shaping": {
                                 "enabled": false
                             }
