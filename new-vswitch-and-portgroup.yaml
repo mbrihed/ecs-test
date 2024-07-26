@@ -89,7 +89,7 @@ spec:
                                 "notify_switches": true,
                                 "rolling_order": false,
                                 "link_criteria_beacon": "IGNORE",
-                                "active_nics": ["vmnic1"],
+                                "active_nics": ["vmnic0"],
                                 "standby_nics": []
                             },
                             "security": {
