@@ -10,7 +10,7 @@ spec:
     {
         "esx": {
             "network_vss": {
-                "switches": [
+                "switches": 
                     {
                         "name": "vSwitch1",
                         "bridge": {
@@ -18,8 +18,8 @@ spec:
                                 "protocol": "CDP",
                                 "operation": "LISTEN"
                             },
-                            "nics": ["vmnic1"]
-                        },
+                            "nics": ["vmnic0"]
+                        }
                     }
                 ]
         }
