@@ -10,7 +10,7 @@ spec:
     {
         "esx": {
             "network_vss": {
-               "switches": [
+               "switches": 
                { 
                   "name": "vSwitch0",
                   "bridge": {
