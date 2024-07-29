@@ -18,9 +18,9 @@ spec:
                                 "protocol": "CDP",
                                 "operation": "LISTEN"
                             },
-                            "nics": ["vmnic0"]
+                        "nics": ["vmnic0"]
                         }
-                    }
-                ]
+                  }
+              }
         }
   }
