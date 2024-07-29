@@ -7,11 +7,11 @@ metadata:
 spec:
   layertype: Incremental
   profile: |
-    {
+  {
         "esx": {
             "network_vss": {
                "switches": 
-               { 
+  { 
                   "name": "vSwitch0",
                   "bridge": {
                      "link_discovery_protocol": {
@@ -20,9 +20,9 @@ spec:
                      },
                      "nics": ["vmnic1"]
                   },
-                  "port_groups": [
-                      {
-                          "name": "Management Network",
+                  "port_groups": 
+  {
+                          "name": "PLTEPG",
                           "vlan_id": 0,
                           "policy": {
                               "nic_teaming": {
@@ -34,16 +34,8 @@ spec:
                                   "standby_nics": []
                               }
                           }
-                      },
-                      {
-                          "name": "VM Network",
-                          "vlan_id": 0
-                      },
-                      {   
-                          "name": "PLTEPG",
-                          "vlan_id": 0
                       }
-                  ],                
+           
                 }   
             }
         }
