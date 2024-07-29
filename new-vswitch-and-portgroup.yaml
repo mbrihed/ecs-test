@@ -83,9 +83,7 @@ spec:
                                 "protocol": "CDP",
                                 "operation": "LISTEN"
                             },
-                            "nics": [
-                                "vmnic0"
-                            ]
+                            "nics": ["vmnic0"]
                         },
                         "num_ports": 1024,
                         "mtu": 1500,
