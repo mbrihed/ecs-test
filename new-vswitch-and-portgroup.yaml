@@ -10,8 +10,7 @@ spec:
   {
         "esx": {
             "network_vss": {
-               "switches": 
-  { 
+               "switches": { 
                   "name": "vSwitch0",
                   "bridge": {
                      "link_discovery_protocol": {
@@ -20,8 +19,7 @@ spec:
                      },
                      "nics": ["vmnic1"]
                   },
-                  "port_groups": 
-  {
+                  "port_groups": {
                           "name": "PLTEPG",
                           "vlan_id": 0,
                           "policy": {
@@ -35,7 +33,6 @@ spec:
                               }
                           }
                       }
-           
                 }   
             }
         }
