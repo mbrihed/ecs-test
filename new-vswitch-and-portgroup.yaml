@@ -40,7 +40,7 @@ spec:
                                     "operation": "LISTEN"
                                 },
                                 "nics": [
-                                    "vmnic1"
+                                    "vmnic0"
                                 ]
                             },
                             "num_ports": 1024,
