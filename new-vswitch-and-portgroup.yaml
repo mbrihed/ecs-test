@@ -6,7 +6,7 @@ metadata:
   namespace: esx-system
 spec:
   layertype: Incremental
-  profile: |
+  profile: 
   {
         "esx": {
             "network_vss": {
